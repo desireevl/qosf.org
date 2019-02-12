@@ -9,6 +9,8 @@ doks:
         nav:
             - item_name: Home
               item_url: '/'
+            - item_name: Manifesto
+              item_url: '/manifesto'
             - item_name: Learn
               item_url: '/learn_quantum'
             - item_name: Code
@@ -39,6 +41,9 @@ doks:
 sass:
     sass_dir: ./doks-theme/_sass
     style: :compressed
+
+gems:
+- jekyll-latex
 
 # Jekyll settings
 layouts_dir: ./doks-theme/_layouts

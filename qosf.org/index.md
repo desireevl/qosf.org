@@ -11,8 +11,9 @@ buttons:
     - content: Become a supporter
       url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
       external_url: true
+      icon: home
     - icon: gitlab
-      content: Follow us on GitLab
+      content: Follow us on GitLab &nbsp;
       url: 'https://gitlab.com/qosf'
       external_url: true
     - icon: github
@@ -20,8 +21,19 @@ buttons:
       url: 'https://github.com/qosf'
       external_url: true
 
+# Author box
+author:
+    title: The Team
+    title_url: 'team'
+    external_url: false
+    description: Find out more about the team behind the Quantum Open Source Foundation (QOSF).
+
 # Grid navigation
 grid_navigation:
+    - title: The QOSFoundation Manifesto.
+      excerpt: Our core beliefs and mission statement and why you should get excited about us.
+      cta: Get inspired
+      url: 'manifesto'
     - title: What is open source?
       excerpt: Simply uploading your code into the web isn't enough. Learn what open source really means.
       cta: Read more
@@ -41,5 +53,5 @@ grid_navigation:
     - title: Quantum software project evaluation.
       excerpt: Most recent results of our monthly evaluation of curated open quantum software projects.
       cta: View results
-      url: 'ranking'
+      url: 'evaluation'
 ---

@@ -2,11 +2,13 @@
 <html>
 	<head>
 		{% include site-head.html %}
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 	</head>
 	<body class="{{ site.doks.color_theme }}" data-spy="scroll" data-target=".js-scrollspy">
 		{% include site-header.html %}
 		<div class="hero-subheader">
 			<div class="container">
+		        {% include fosdem-banner.html %}
 				<div class="row">
 					<div class="col-md-9">
 						<div class="align-container" data-mh>
@@ -17,20 +19,15 @@
 								{% if page.description %}
 									<p class="hero-subheader__desc">{{ page.description }}</p>
 								{% endif %}
-								{% if page.page_nav.prev.content or page.page_nav.next.content %}
-									{% if page.page_nav.prev.content and page.page_nav.prev.url %}
-										<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ page.page_nav.prev.url }}" class="btn btn--dark btn--rounded btn--w-icon btn--w-icon-left">
-											<i class="icon icon--arrow-left"></i>
-											{{ page.page_nav.prev.content }}
-										</a>
-									{% endif %}
-									{% if page.page_nav.next.content and page.page_nav.next.url %}
-										<a href="{% if jekyll.environment == 'production' %}{{ site.doks.baseurl }}{% endif %}{{ page.page_nav.next.url }}" class="btn btn--dark btn--rounded btn--w-icon">
-											<i class="icon icon--arrow-right"></i>
-											{{ page.page_nav.next.content }}
-										</a>
-									{% endif %}
-								{% endif %}
+                                {% for button in page.buttons %}
+									{% if button.external_url == true %}
+                                    <br>
+									<a href="{{ button.url }}" class="btn btn--dark btn--rounded btn--w-icon" style='margin-bottom: -50px'>
+										{% if button.icon %}<i class="icon icon--{{ button.icon }}"></i>{% endif %}
+										{{ button.content }}
+									</a>
+                                    {% endif %}
+								{% endfor %}
 							</div><!-- /.align-inner -->
 						</div><!-- /.align-container -->
 					</div><!-- /.col -->
@@ -40,7 +37,7 @@
 		<div class="section">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-11">
+					<div class="col-md-12">
 						<div class="content">
 							{{ content }}
 						</div><!-- /.content -->

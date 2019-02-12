@@ -7,6 +7,11 @@ comments: false
 # Hero section
 title: Learning Resources on Quantum Computing
 description: A curated selection of the best free learning resources on quantum computing for all skill levels.
+buttons:
+    - content: Become a supporter
+      url: 'https://mailchi.mp/762c19baab5a/qosf-supporter'
+      external_url: true
+      icon: home
 
 # Author box
 author:
@@ -21,8 +26,15 @@ micro_nav: false
 ---
 
 # Learning
+
 #### [Documentation for Forest and pyQuil](http://pyquil.readthedocs.io/en/latest/)
 Tutorials for Rigetti Computing's SDK.
+
+#### [Documentation for Ocean](https://docs.ocean.dwavesys.com/en/latest/)
+Tutorial for D-Wave System's SDK.
+
+#### [Documentation for Strawberry Fields](https://strawberryfields.readthedocs.io/en/latest/)
+Background information on the photonic continuous-variable approach to quantum computation, as well as tutorials for Xanadu's SDK.
 
 #### [IBM Q Full User Guide](https://quantumexperience.ng.bluemix.net/qx/tutorial?sectionId=full-user-guide&page=introduction)
 Short tutorials providing a gentle introduction to quantum computing and IBM Q.
@@ -74,7 +86,14 @@ Conceptual introduction to the fundamental principles of quantum mechanics.
 #### [Understanding Quantum Computers](https://www.futurelearn.com/courses/intro-to-quantum-computing)
 Introduction to the key concepts of quantum computing with minimal mathematics.
 
-# Development Tools 
+#### [Quantum Quest](https://www.quantum-quest.nl/)
+A web class for _high school students_. Organized by [QuSoft](http://www.qusoft.org/)
+
+#### [Quantum Machine Learning](https://www.edx.org/course/quantum-machine-learning)
+Hands-on introduction to quantum computing and quantum-enhanced machine learning, complete with a [code repo](https://gitlab.com/qosf/qml-mooc/).
+
+
+# Development Tools
 
 [Click here](/project_list) for the most up-to-date list of all open source quantum software projects.
 
@@ -133,6 +152,9 @@ Microsoft Research Talk on introductory quantum computing for computer scientist
 
 # Community
 
+#### [D-Wave Leap Community](https://support.dwavesys.com/hc/en-us/community/topics)
+D-Wave System's Leap Community Forum.
+
 #### [IBM Q Community](https://quantumexperience.ng.bluemix.net/qx/community)
 IBM Quantum experience Community Forum.
 
@@ -142,6 +164,9 @@ Slack Channel for QISKit and quantum computing discussions.
 #### [Mike & Ike Subreddit](https://www.reddit.com/r/MikeAndIke/)
 Discussion about the book Quantum Computation and Quantum Information.
 
+#### [PennyLane Discussion Forum](https://discuss.pennylane.ai)
+Discussion forum for quantum machine learning, both using simulations and on near term hardware.
+
 #### [Quantum Computing StackExchange](http://quantumcomputing.stackexchange.com/)
 Question and answer site for quantum computing.
 
@@ -150,6 +175,9 @@ Facebook group for quantum research discussion.
 
 #### [Rigetti Community](http://slack.rigetti.com/)
 Slack Channel for Rigetti and quantum computing discussions.
+
+#### [Strawberry Fields Community](https://u.strawberryfields.ai/slack)
+Slack channel for Xanadu and Strawberry Fields photonic/CV quantum computing discussions.
 
 #### [Quantum Computing Slack Community](http://quantum-computing.slack.com/)
 Slack Channel for quantum computing discussions. Generate an invite for
